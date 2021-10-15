@@ -1,0 +1,15 @@
+<p>Hi, my name is {{ name }}.
+I am 29 and live in Padcuah
+I have two dogs {{ dog1 }} and {{ dog2 }}</p>
+
+<div *ngIf="loggedIn; else notTrue">
+  I am logged in
+</div>
+<ng-template #notTrue>
+ <p>I am not logged in </p>
+ </ng-template>
+<form>
+ <input [disabled]="isDisabled" type="fname" name="fname" >
+ <label for=lname>Last Name </label>
+</form>
+
